@@ -1,0 +1,33 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+img{
+    width: 100%;
+}
+.font-a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.font-black{
+    color: black;
+}
+.font-navy{
+    color: rgb(0, 21, 56);
+}
+.bg-black{
+    background-color: #333;
+}
+.font-while{
+    color: white !important;
+}
+.font-green{
+    display: block;
+    color: #20c997;
+    margin: 15px 0;
+    font-size: 18px;
+}
