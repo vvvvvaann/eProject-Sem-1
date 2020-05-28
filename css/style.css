@@ -1,7 +1,9 @@
 body{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
+
 .container-item{
   width: 1200px;
   margin: auto !important;
@@ -230,7 +232,7 @@ a:hover:not(.tran) img{
 }
 
 .see-more{
-  margin-top: 0px;
+  margin-top: 10px;
   height: 100%;
 }
 .see-more >a{
@@ -244,9 +246,16 @@ a:hover:not(.tran) img{
 .see-more >a >div{
   width: 100%;
   position: absolute;
-  top: 100px;
+  top: 90px;
+  color: white;
 }
-
+.see-more >a:hover .see-more-item{
+  color: #20c997;
+}
+.see-more >a >div >i{
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
 
 .bridge-longest .xt{
   height: 60px;
@@ -365,9 +374,6 @@ a:hover:not(.tran) img{
 }
 
 
-/* html{
-  scroll-behavior: smooth;
-} */
 /* end contact us */
 
 
