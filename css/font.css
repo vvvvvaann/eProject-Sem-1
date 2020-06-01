@@ -31,3 +31,29 @@ img{
     margin: 15px 0;
     font-size: 18px;
 }
+.p-bridge{
+    line-height: 20px;
+    text-align: justify;
+}
+
+.comment-template .comment-content p{
+    margin-bottom: 5px;
+}
+.comment-template .comment-content a{
+    color: #288ad9;
+    font-size: 15px;
+    border-bottom: 1px solid #288ad9;
+}
+.comment-template .comment-content span{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+.i-name{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 12px;
+}
+.name{
+    font-weight: bold;
+}

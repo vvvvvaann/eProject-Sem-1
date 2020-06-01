@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
     <!-- start header -->
@@ -37,7 +38,8 @@
     <div class="container-fluid">
         <div class="container-item">
             <!-- nav -->
-            <div class="nav">
+            <div class="nav nav-page">
+                <span class="nav-item  bg-black"><a class="font-while" href="../index.html"><i class="fas fa-home"></i> Home</a></span>
                 <span class="nav-item"><a href="../bridges-longest.html">Bridges longest</a></span>
                 <span class="nav-item"><a href="../bridges-highest.html">Bridges highest</a></span>
                 <span class="nav-item"><a href="../bridges-beautiful.html">Bridges most beautiful</a></span>
@@ -47,25 +49,31 @@
 
             <!-- start bridge -->
             <div>
-                <!-- image bridge -->
-                <div class="img-bridge mar">
-                    <img src="../img/seven-mile/seven-mile-1.jpg" alt="seven-mile">
-                </div>
                 <!-- name bridge -->
                 <h1>Seven Mile Bridge</h1>
-                <p>
-                    The Seven Mile Bridge is a bridge in the Florida Keys, in Monroe County, Florida, United States. 
-                    It connects Knight's Key (part of the city of Marathon, Florida) 
-                    in the Middle Keys to Little Duck Key in the Lower Keys. Among the longest bridges in existence when it was built, 
-                    it is part of the Overseas Highway in the Keys, which is part of the 2,369-mile (3,813 km) U.S. Route 1.
-                </p>
-                <p class="mar">
-                    There are two bridges in this location. The modern bridge is open to vehicular traffic; 
-                    the older one only to pedestrians and cyclists. The older bridge, 
-                    originally known as the Knights Key-Pigeon Key-Moser Channel-Pacet Channel Bridge, 
-                    was constructed from 1909 to 1912 under the direction of Henry Flagler and Clarence S. 
-                    Coe as part of the Florida East Coast Railway's Key West Extension, also known as the Overseas Railroad.
-                </p>
+                <div class="row">
+                    <!-- content bridge -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 content-p">
+                        <p>
+                            The Seven Mile Bridge is a bridge in the Florida Keys, in Monroe County, Florida, United States. 
+                            It connects Knight's Key (part of the city of Marathon, Florida) 
+                            in the Middle Keys to Little Duck Key in the Lower Keys. Among the longest bridges in existence when it was built, 
+                            it is part of the Overseas Highway in the Keys, which is part of the 2,369-mile (3,813 km) U.S. Route 1.
+                        </p>
+                        <p class="mar">
+                            There are two bridges in this location. The modern bridge is open to vehicular traffic; 
+                            the older one only to pedestrians and cyclists. The older bridge, 
+                            originally known as the Knights Key-Pigeon Key-Moser Channel-Pacet Channel Bridge, 
+                            was constructed from 1909 to 1912 under the direction of Henry Flagler and Clarence S. 
+                            Coe as part of the Florida East Coast Railway's Key West Extension, also known as the Overseas Railroad.
+                        </p>
+                    </div>
+                    <!-- image bridge -->
+                    <div class="img-bridge mar col-xl-6 col-lg-6 col-md-6">
+                        <img src="../img/seven-mile/seven-mile-1.jpg" alt="seven-mile">
+                    </div>
+                </div>
+
                 <div class="row mar">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <table class="table-detail">
@@ -101,11 +109,12 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 gg-map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.854197405753!2d-81.1550476!3d24.7023719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c3c7c8107b6721d!2sSeven%20Mile%20Bridge!5e0!3m2!1svi!2s!4v1590632986795!5m2!1svi!2s" 
                         width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
+
                 <!-- library -->
                 <div class="mar">
                     <span class="font-green">LIBRARY</span>
@@ -116,15 +125,43 @@
                         <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-5.jpg" alt="seven-mile-5"></div>
                     </div>
                 </div>
+
+                <!-- Print this page -->
+                <div class="row">
+                    <div class="print">
+                        <i class="fas fa-download" onclick="window.print()"> Print this page</i>
+                    </div>
+                </div>
+                <!-- end Print this page -->
+
                 <!-- comment -->
-                <div class="comment mar">
+                <div class="comment">
                     <span class="font-green">COMMENT</span>
                     <form action="#" method="GET">
-                        <textarea name="content" id="content" cols="100" rows="5" placeholder="Write comment here..."></textarea> <br>
-                        <span>Name : </span><input type="text" name="name" id="name" placeholder="Name">
+                        <textarea name="content" id="content" cols="60" rows="4" required placeholder="Write comment here..."></textarea> <br>
+                        </span><input type="text" name="name" id="name" required placeholder="Name">
                         <button>Sent</button>
                     </form>
+                    <span class="name">2 Comment</span>
+                    <!-- comment template 1 -->
+                    <div class="comment-template">
+                        <div class="comment-info">
+                            <span class="i-name">A</span>
+                            <span class="name">Abbey</span>
+                        </div>
+                        <div class="comment-content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, eaque?</p><a href="">Reply</a><span>--2 days ago--</span></div>
+                    </div>
+                    <!-- comment template 2 -->
+                    <div class="comment-template">
+                        <div class="comment-info">
+                            <span class="i-name">B</span>
+                            <span class="name">Bell</span>
+                        </div>
+                        <div class="comment-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore!</p><a href="">Reply</a><span>--3 days ago--</span></div>
+                    </div>
                 </div>
+                <!-- end comment -->
+                
                 <!-- start hightlight bridge -->
                 <div class="mar">
                     <span class="font-green">RELATED ARTICLES</span>
@@ -153,13 +190,35 @@
     <!-- start footer -->
     <div class="container-fluid footer">
         <div class="container-item">
-            <div class="reserved">
-                <p>
-                    @2020 - Amazing Bridges. eProject Sem-1. <br>
-                    Interface designed by Vu Dinh Van and Y-Tu-Mlo.
-                </p>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 footer-item">
+                    <h3>More About Amazing Bridges</h3>
+                    <a href="../index.html"><i class="fas fa-home"></i> Amazing Bridges</a>
+                    <a href="../site-map.html"><i class="fas fa-sitemap"></i> Site Map</a>
+                    <a href="../contact-us.html"><i class="fas"></i> Contact Us</a>
+                    <a href="../about-us.html"><i class="fas"></i> About Us</a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 footer-item">
+                    <h3>Keep Connected</h3>
+                    <a href="https://vi-vn.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Like us on Facebook</a>
+                    <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter-square"></i> Follow us on Twitter</a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i> Subscribe us on Youtube</a>
+                    <a href="https://accounts.google.com/" target="_blank"><i class="fab fa-google-plus"></i> Add us on Google Plus</a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 footer-item">
+                    <h3>Contact Information</h3>
+                    <a href="https://goo.gl/maps/GApyYmSGaM2cFQPv5" target="_blank"><i class="fas fa-map-marker-alt"></i></i> 164 Phan Chu Trinh</a>
+                    <a href="tel:0123456789"><i class="fas fa-mobile-alt"></i> 0123456789</a>
+                    <a href="mailto: contact@example.com"><i class="far fa-envelope"></i> contact@example.com</a>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="reserved container-fluid">
+        <p>
+            @2020 - Amazing Bridges. eProject Sem-1. <br>
+            Interface designed by Vu Dinh Van and Y-Tu-Mlo.
+        </p>
     </div>
     <!-- end footer -->
 
