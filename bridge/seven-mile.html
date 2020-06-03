@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 </head>
 <body>
     <!-- start header -->
@@ -69,8 +70,8 @@
                         </p>
                     </div>
                     <!-- image bridge -->
-                    <div class="img-bridge mar col-xl-6 col-lg-6 col-md-6">
-                        <img src="../img/seven-mile/seven-mile-1.jpg" alt="seven-mile">
+                    <div class="img-bridge mar col-xl-6 col-lg-6 col-md-6 cursor-img">
+                        <img src="../img/seven-mile/seven-mile-1.jpg" onclick="onClick(this)" alt="seven-mile">
                     </div>
                 </div>
 
@@ -118,11 +119,18 @@
                 <!-- library -->
                 <div class="mar">
                     <span class="font-green">LIBRARY</span>
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-2.jpg" alt="seven-mile-2"></div>
-                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-3.jpg" alt="seven-mile-3"></div>
-                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-4.jpg" alt="seven-mile-4"></div>
-                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-5.jpg" alt="seven-mile-5"></div>
+                    <div class="row cursor-img">
+                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-2.jpg" onclick="onClick(this)" alt="seven-mile-2"></div>
+                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-3.jpg" onclick="onClick(this)" alt="seven-mile-3"></div>
+                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-4.jpg" onclick="onClick(this)" alt="seven-mile-4"></div>
+                        <div class="col-xl-3 col-lg-3 col-md-6"><img src="../img/seven-mile/seven-mile-5.jpg" onclick="onClick(this)" alt="seven-mile-5"></div>
+                    </div>
+
+                    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <img id="img01" />
+                        </div>
                     </div>
                 </div>
 
@@ -224,5 +232,11 @@
 
     <!-- js -->
     <script src="./js/js.js"></script>
+    <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+    </script>
 </body>
 </html>

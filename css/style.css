@@ -469,7 +469,12 @@ a:hover:not(.tran) img{
 .comment-template .comment-info{
   margin-top: 20px;
 }
-
+.cursor-img img:hover{
+  cursor: move;
+}
+/* .cursor-img img:hover{
+  cursor: move;
+} */
 
 /* reponsive @media */
 @media screen and (max-width : 1200px){
