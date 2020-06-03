@@ -3,12 +3,10 @@ body{
  padding: 0;
  scroll-behavior: smooth;
 }
-
 .container-item{
  width: 1200px;
  margin: auto !important;
 }
-
 
 /* start header */
 .logo a img{
@@ -33,6 +31,7 @@ body{
 .menu-ul li a{
  padding: 10px 2px;
  text-decoration: none;
+ font-size: 16px;
 }
 .menu-ul li a:hover{
  border-bottom: 2px solid rgb(0, 21, 56);
@@ -91,7 +90,6 @@ body{
 /* end image bridge */
 
 
-
 /* start body */
 
  /* Start nav */
@@ -105,6 +103,9 @@ body{
 }
 .nav-page{
  background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-page-bridge{
+  max-height: 68px;
 }
 .nav .nav-item{
  text-align: center;
@@ -149,7 +150,7 @@ body{
 }
 .fade a img{
  width: 100%;
- max-height: 500px;
+ max-height: 600px;
 }
 .prev, .next{
  cursor: pointer;
@@ -287,6 +288,7 @@ a:hover:not(.tran) img{
  color: white;
 }
  /* end bridges longest */
+
  /* start highest */
 .highest{
  margin: 20px 0;
@@ -304,6 +306,7 @@ a:hover:not(.tran) img{
  color: #20c997;
 }
  /* end highest */
+
 /* end body */
 
 
@@ -345,13 +348,10 @@ a:hover:not(.tran) img{
   font-size: 15px;
 }
 /* End footer */
-.mar{
- margin-bottom: 60px;
-}
-.content-p p{ 
-  line-height: 30px;
-  text-align: justify;
-}
+
+
+/* Start page */
+ /* start table */
 .table-detail{
   text-align: left;
 }
@@ -364,6 +364,9 @@ a:hover:not(.tran) img{
 .table-detail tr:nth-child(even) {
   background-color: #dddddd;
 }
+ /* end table */
+
+ /* start print */
 .print{
   width: 100%;
   text-align: right;
@@ -378,10 +381,9 @@ a:hover:not(.tran) img{
   color: white;
   background-color: #20c997;
 }
-.gg-map{
-  min-height: 300px;
-}
+ /* end print */
 
+ /* start comment */
 .comment{
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -390,7 +392,40 @@ a:hover:not(.tran) img{
   margin: 8px 0;
   padding: 10px;
 }
+.comment-template{
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin: 20px 0;
+}
+.comment-template .comment-info{
+  margin-top: 20px;
+}
+ /* end comment */
+ 
+.mar{
+ margin-bottom: 60px;
+}
+
+.content-p p{ 
+  line-height: 30px;
+  text-align: justify;
+}
+
+.gg-map{
+  min-height: 300px;
+}
+
+.cursor-img img:hover{
+  cursor: move;
+}
+/* End page */
+
+
 /* start contact us */
+.contact{
+  margin-bottom: 60px;
+ }
+
 .contact-us{
  background-color: rgba(0, 0, 0, 0.05);
  height: 80px;
@@ -402,14 +437,6 @@ a:hover:not(.tran) img{
 .contact-us span{
  border-bottom: 2px solid black;
 }
-
-.contact{
- margin-bottom: 60px;
- 
-}
-/* .contact .form{
- 
-} */
 .input-contact{
  margin: 8px 0;
  padding: 10px;
@@ -426,21 +453,6 @@ a:hover:not(.tran) img{
 #sent{
  margin-bottom: 80px;
 }
-
-.social{
- margin-bottom: 60px;
- background-color: rgba(0, 0, 0, 0.05);
-}
-
-.social a{
- color: black;
- margin: 0 20px;
-}
-.social a i{
- font-size: 2rem;
-}
-
-
 /* end contact us */
 
 
@@ -452,6 +464,9 @@ a:hover:not(.tran) img{
  font-size: 18px;
 }
 /* end about us */
+
+
+/* start site map */
 .site-map a{
   color: black;
 }
@@ -461,20 +476,8 @@ a:hover:not(.tran) img{
 .site-map h2{
   border-bottom: 1px solid black;
 }
-.comment-template{
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  width: 50%;
-  margin: 20px 0;
-}
-.comment-template .comment-info{
-  margin-top: 20px;
-}
-.cursor-img img:hover{
-  cursor: move;
-}
-/* .cursor-img img:hover{
-  cursor: move;
-} */
+/* end site map */
+
 
 /* reponsive @media */
 @media screen and (max-width : 1200px){
