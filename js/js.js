@@ -57,27 +57,4 @@ $(document).ready(function() {
 $(function () {
   $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
   });
-
-//
-$(document).ready(function() {
-  $('body').on('click','.sent', function() {
-  var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-  var mobile = $('#phone').val();
-  if(mobile !==''){
-      if (vnf_regex.test(mobile) == false)
-      {
-          alert('Số điện thoại của bạn không đúng định dạng!');
-      }else{
-          alert('Số điện thoại của bạn hợp lệ!');
-      }
-  }else{
-      alert('Bạn chưa điền số điện thoại!');
-  }
-  });
-});
-
-//
-function contactus(){
-  alert("gui phan hoi thanh cong");
-}
                 
